@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Touchless Doorbell – Project Details</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <div id="project-bg-animation"></div>
+
+    <div class="project-detail">
+    <h1>Arduino-Based Touchless Doorbell</h1>
+    <p><strong>Overview:</strong> This project showcases a touchless doorbell system built using Arduino UNO. Designed by a team of three, it leverages a PIR sensor to detect motion and activate a buzzer, alerting the residents of a visitor without the need for contact. It's a compact and efficient application of automation in daily life.</p>
+
+    <h3>Key Components:</h3>
+    <ul>
+      <li>Arduino UNO</li>
+      <li>PIR Motion Sensor</li>
+      <li>Buzzer</li>
+      <li>Resistors</li>
+      <li>Bulb (optional for indicators)</li>
+      <li>Jumper Wires</li>
+      <li>Breadboard</li>
+    </ul>
+
+    <h3>Working Mechanism:</h3>
+    <p>When someone comes close to the door, the PIR sensor detects motion and sends a signal to the Arduino. The Arduino then triggers the buzzer, which acts as a doorbell. The system is clean, contactless, and works without any need for pressing a button.</p>
+
+    <h3>Pros:</h3>
+    <ul>
+      <li>Completely contactless and safe</li>
+      <li>Cost-effective and easy to implement</li>
+      <li>Beginner-friendly with scope for smart home upgrades</li>
+    </ul>
+
+    <h3>Cons:</h3>
+    <ul>
+      <li>May trigger due to pets or minor movement</li>
+      <li>Requires stable indoor conditions</li>
+      <li>Limited detection range by PIR sensor</li>
+    </ul>
+
+    <h3>Simulation and Hardware:</h3>
+    <img src="../assets/images/ar1.jpg" alt="Doorbell Simulation" style="max-width:100%; margin-bottom:1rem;" />
+    <img src="../assets/images/ar2.jpg" alt="Doorbell Circuit" style="max-width:100%;" />
+
+    <a href="../index.html" class="btn" style="margin-top:2rem; display:inline-block;">← Back to Portfolio</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("project-bg-animation", {
+  "particles": {
+    "number": {
+      "value": 40,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 0.3,
+      "random": true
+    },
+    "size": {
+      "value": 8,
+      "random": true
+    },
+    "line_linked": {
+      "enable": false
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "top",
+      "random": false,
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": {
+        "enable": false
+      },
+      "onclick": {
+        "enable": false
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+</body>
+</html>

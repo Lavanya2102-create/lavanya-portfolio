@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>InvestWise – Project Details</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <div id="project-bg-animation"></div>
+
+    <div class="project-detail">
+    <h1>InvestWise – Python Stock Analysis Suite</h1>
+
+    <h3>🛠 Tech Stack:</h3>
+    <ul>
+      <li>Python, Tkinter (for GUI)</li>
+      <li>Matplotlib, Pandas, yfinance, TextBlob</li>
+      <li>NLP & Sentiment Analysis</li>
+    </ul>
+
+    <h3>📌 Project Overview:</h3>
+    <p>
+      InvestWise is a Python-based desktop application designed to help users analyze stock market trends, news sentiment, and company performance. It provides a user-friendly interface for real-time stock price tracking, financial data visualization, and intelligent insights using sentiment analysis.
+    </p>
+
+    <h3>📊 Key Features:</h3>
+    <ul>
+      <li><strong>Stock Data Analysis:</strong> Retrieve historical stock prices and visualize them.</li>
+      <li><strong>Company Comparison Tool:</strong> Compare prices using dynamic line graphs.</li>
+      <li><strong>Sentiment Analysis Module:</strong> Analyze news headlines using NLP (TextBlob).</li>
+      <li><strong>AI Assistance (Future Scope):</strong> GPT-like integration for finance Q&A.</li>
+      <li><strong>Export Functionality:</strong> Save data/sentiment reports as CSV files.</li>
+    </ul>
+
+    <h3>💡 Unique Highlights:</h3>
+    <ul>
+      <li>Multi-tab GUI: Company Overview, Peer Benchmarking, Analyst Ratings, etc.</li>
+      <li>Clean sentiment visualization with mood meter</li>
+      <li>Designed for non-coders interested in financial data</li>
+    </ul>
+
+    <h3>🧠 What I Learned:</h3>
+    <ul>
+      <li>GUI development using Tkinter</li>
+      <li>API data collection using yfinance</li>
+      <li>Natural Language Processing via TextBlob</li>
+    </ul>
+
+    <h3>Images:</h3>
+    <img src="../assets/images/st1.jpg" alt="InvestWise GUI" style="max-width:100%; margin-bottom:1rem;" />
+    <img src="../assets/images/st2.jpg" alt="Sentiment Output" style="max-width:100%;" />
+
+    <a href="../index.html" class="btn" style="margin-top:2rem; display:inline-block;">← Back to Portfolio</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("project-bg-animation", {
+  "particles": {
+    "number": {
+      "value": 40,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 0.3,
+      "random": true
+    },
+    "size": {
+      "value": 8,
+      "random": true
+    },
+    "line_linked": {
+      "enable": false
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "top",
+      "random": false,
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": {
+        "enable": false
+      },
+      "onclick": {
+        "enable": false
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+</body>
+</html>
