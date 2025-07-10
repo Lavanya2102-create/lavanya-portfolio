@@ -1,216 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script defer src="script.js"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" />
-    <!-- Responsive viewport -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Google Fonts (Optional but makes it stylish) -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts (Optional but makes it stylish) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
   <meta charset="UTF-8" />
   <meta name="keywords" content="Lavanya Mittal, Portfolio, Computer Science, Web Developer, Projects, Java, Python">
-<meta name="author" content="Lavanya Mittal">
+  <meta name="author" content="Lavanya Mittal">
 
-  <meta name="description" content="Lavanya Mittal's portfolio – a Computer Science student showcasing projects, skills, and contact info." />
+  <meta name="description"
+    content="Lavanya Mittal's portfolio – a Computer Science student showcasing projects, skills, and contact info." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lavanya | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  
-    
+
     <nav class="navbar">
-        <div class="container nav-container">
-          <a href="#about" class="nav-logo">LavanyaMittal</a>
-          <ul class="nav-links">
-            <li><a href="certificates.html">Certificates</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+      <div class="nav-container">
+        <!-- Left: Logo -->
+        <div class="nav-left">
+          <a href="#about" class="logo">Lavanya Mittal</a>
         </div>
-      </nav>
-      
-      <header class="hero">
-        <video autoplay muted loop id="heroVideo">
-            <source src="assets/code.mp4" type="video/mp4">
-          </video>
-        <nav class="navbar">
-          <h1 class="logo">Lavanya</h1>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-            <!-- 🔘 Theme Toggle Button -->
-    <div class="theme-toggle-wrapper">
-  <button id="themeToggle">🌓</button>
-  <span class="theme-label">Toggle Theme</span>
-</div>
 
-        </nav>
-      
-        <section class="hero-content">
-          <div class="profile-container">
-            <div class="rotating-ring"></div>
-            <img src="assets/images/Lavanya.jpg" alt="Lavanya's photo" class="profile-img" id="profileImage" />
-          </div>
-      
-          <h2>Hi, I'm Lavanya 👋 <span class="typed-text"></span></h2>
-          <p>A passionate Computer Science student crafting clean code and cool projects.</p>
-          <a href="#projects" class="btn">View My Work</a>
-        </section>
-      </header>
-      
-      <!-- Modal Bio -->
-      <div class="modal" id="bioModal">
-        <div class="modal-content">
-          <span class="close-btn" id="closeModal">&times;</span>
-          <h3>Hello! 👋</h3>
-          <p>I’m Lavanya — passionate about tech, code, and creativity. I love solving problems and bringing ideas to life.</p>
+        <!-- Center: Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Right: Theme Toggle -->
+        <div class="theme-toggle-wrapper">
+          <button id="themeToggle">🌓</button>
+          <span class="theme-label">Toggle Theme</span>
         </div>
       </div>
-      
-     
-      
-      
-      <!-- About Section -->
-      <section id="about" class="about-section" data-aos="fade-up">
-        <div class="container">
-          <h2>About Me</h2>
-          <p>
-            Hey! I'm Lavanya, a Computer Science student with a curious mind and a drive to build, learn, and grow. I thrive on challenges — whether it's solving a tough coding problem or giving my all on the tennis court. As a competitive lawn tennis player and skilled skater, I've developed a strong sense of discipline, focus, and resilience.
-          </p>
-          <p>
-            In the tech world, I’m passionate about coding, web development, and embedded systems (Arduino is my happy place!). I love turning complex ideas into clean, functional projects. With a foundation in Java programming and hands-on project experience, I’m continuously building my skills in problem-solving, creativity, and teamwork.
-            <p>
-            For me, Computer Science isn't just a field — it's a way to think critically, create meaningfully, and contribute purposefully. I'm always eager to explore, innovate, and push boundaries, both in tech and in life.
-             </p>
-           
-          </p>
-          <p> ✨Let's create something extraordinary✨.</p>
-          <a href="assets/Lavanya_Resume.pdf" download class="btn">Download Resume</a>
-        </div>
-      </section>
+    </nav>
 
-      <!-- Decorative SVG Wave Divider -->
-      <div class="wave-divider">
-        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-          <path d="M0,224L80,197.3C160,171,320,117,480,106.7C640,96,800,128,960,144C1120,160,1280,160,1360,160L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
-           fill="#1e293b"></path>
-        </svg>
+    <header class="hero">
+    <video autoplay muted loop id="heroVideo">
+      <source src="assets/code.mp4" type="video/mp4">
+    </video>
+
+
+    <section class="hero-content">
+      <div class="profile-container">
+        <div class="rotating-ring"></div>
+        <img src="assets/images/Lavanya.jpeg" alt="Lavanya's photo" class="profile-img" id="profileImage" />
       </div>
-  
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section" data-aos="zoom-in" style="position:relative;">
-      
+
+      <h2>Hi, I'm Lavanya 👋 <span class="typed-text"></span></h2>
+      <p>A passionate Computer Science student crafting clean code and cool projects.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </section>
+  </header>
+
+  <!-- Modal Bio -->
+  <div class="modal" id="bioModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h3>Hello! 👋</h3>
+      <p>I’m Lavanya — passionate about tech, code, and creativity. I love solving problems and bringing ideas to life.
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <!-- About Section -->
+  <section id="about" class="about-section" data-aos="fade-up">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="project-wrapper">
-        <a href="projects/touchless-doorbell.html" class="project-card">
-          <h3>Touchless Doorbell (Arduino)</h3>
-          <p>A smart, hygienic solution that rings the doorbell without physical contact using PIR sensors and Arduino UNO.</p>
-        </a>
-  
-        <a href="projects/investwise-stock-suite.html" class="project-card">
-          <h3>InvestWise – Stock Analysis App</h3>
-          <p>Powerful Python desktop app that visualizes financial data and analyzes market sentiment with ease.</p>
-        </a>
-      </div>
-      <p style="text-align:center; margin-top: 20px; font-style: italic; color: #2480e8;">Click on any project card to explore more details.</p>
+      <h2>About Me</h2>
+      <p>
+        Hey! I'm Lavanya, a Computer Science student with a curious mind and a drive to build, learn, and grow. I thrive
+        on challenges — whether it's solving a tough coding problem or giving my all on the tennis court. As a
+        competitive lawn tennis player and skilled skater, I've developed a strong sense of discipline, focus, and
+        resilience.
+      </p>
+      <p>
+        In the tech world, I’m passionate about coding, web development, and embedded systems (Arduino is my happy
+        place!). I love turning complex ideas into clean, functional projects. With a foundation in Java programming and
+        hands-on project experience, I’m continuously building my skills in problem-solving, creativity, and teamwork.
+      <p>
+        For me, Computer Science isn't just a field — it's a way to think critically, create meaningfully, and
+        contribute purposefully. I'm always eager to explore, innovate, and push boundaries, both in tech and in life.
+      </p>
 
+      </p>
+      <p> ✨Let's create something extraordinary✨.</p>
+      <a href="assets/Lavanya_Resume.pdf" download class="btn">Download Resume</a>
     </div>
   </section>
-  
-  
+
+  <!-- Decorative SVG Wave Divider -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path
+        d="M0,224L80,197.3C160,171,320,117,480,106.7C640,96,800,128,960,144C1120,160,1280,160,1360,160L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+        fill="#1e293b"></path>
+    </svg>
+  </div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">✨ Featured Projects</h2>
+      <div class="project-grid-modern">
+
+        <!-- Example Project Card -->
+        <div class="modern-project-card">
+          <div class="project-thumb">
+            <img src="assets/images/touchless.jpg" alt="Touchless Doorbell">
+            <div class="project-overlay">
+              <h3>Touchless Doorbell</h3>
+              <p>A smart, hygienic solution that rings the doorbell without physical contact using PIR sensors and Arduino UNO.</p>
+              <a href="projects/touchless-doorbell.html" class="overlay-btn">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modern-project-card">
+          <div class="project-thumb">
+            <img src="assets/images/invest.jpeg" alt="InvestWise App">
+            <div class="project-overlay">
+              <h3>InvestWise</h3>
+              <p>Powerful Python desktop app that visualizes financial data and analyzes market sentiment with ease.</p>
+              <a href="projects/investwise-stock-suite.html" class="overlay-btn">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modern-project-card">
+          <div class="project-thumb">
+            <img src="assets/images/cyber.jpeg" alt="InvestWise App">
+            <div class="project-overlay">
+              <h3>Cybersecurity</h3>
+              <p>A web page to educate users about online threats and best practices.</p>
+              <a href="https://lavanya2102-create.github.io/cybersecure-lavanya/" class="overlay-btn">View</a>
+              <a href="https://github.com/Lavanya2102-create/cybersecure-lavanya" target="_blank"
+                class="overlay-btn">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modern-project-card">
+          <div class="project-thumb">
+            <img src="assets/images/jarvis.jpeg" alt="InvestWise App">
+            <div class="project-overlay">
+              <h3>Jarvis</h3>
+              <p>A voice-controlled personal assistant that performs basic tasks.</p>
+              <a href="https://jarvis-vitualassistant.netlify.app/" class="overlay-btn">View</a>
+              <a href="https://jarvis-vitualassistant.netlify.app/" target="_blank" class="overlay-btn">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modern-project-card">
+          <div class="project-thumb">
+            <img src="assets/images/calculator.jpeg" alt="InvestWise App">
+            <div class="project-overlay">
+              <h3>Calculator</h3>
+              <p>A calculator supporting standard, scientific, and programmer modes.</p>
+              <a href="https://lavanya2102-create.github.io/multi-mode-calculator/" class="overlay-btn">View</a>
+              <a href="https://github.com/Lavanya2102-create/multi-mode-calculator" target="_blank"
+                class="overlay-btn">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modern-project-card">
+          <div class="project-thumb">
+            <img src="assets/images/portfolio.jpeg" alt="InvestWise App">
+            <div class="project-overlay">
+              <h3>Portfolio</h3>
+              <p>This very site showcasing all my technical skills and projects.</p>
+              <a href="https://lavanya2102-create.github.io/lavanya-portfolio/" class="overlay-btn">View</a>
+              <a href="https://github.com/Lavanya2102-create/lavanya-portfolio" target="_blank"
+                class="overlay-btn">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more project cards with the same format -->
+
+      </div>
+      <p style="text-align:center; margin-top: 40px; font-style: italic; color: #2480e8;">Click on any project card to explore more details.</p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">🎓 My Education</h2>
+      <div class="edu-timeline">
+
+        <!-- Card 1 -->
+        <div class="edu-block">
+          <div class="edu-dot"></div>
+          <div class="edu-content glass-card">
+            <img src="assets/images/chitkara.jpg" alt="Chitkara Logo" class="edu-img-left">
+            <h3>B.Tech in Computer Science</h3>
+            <span class="edu-time">2024 – 2026</span>
+            <p><strong>University:</strong> Chitkara University</p>
+            <p><strong>Location:</strong> India, Punjab, rajpura Campus</p>
+            <!--<p><strong>CGPA:</strong> [Your CGPA]</p>-->
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="edu-block">
+          <div class="edu-dot"></div>
+          <div class="edu-content glass-card">
+            <img src="assets/images/asulogo.png" alt="ASU Logo" class="edu-img-left">
+            <h3>B.Tech in computer science</h3>
+            <span class="edu-time">2026 – 2028</span>
+            <p><strong>University:</strong> Arizona State University (ASU)</p>
+            <p><strong>Location:</strong> USA, Arizona, Tempe Campus</p>
+            <!--<p><strong>Score:</strong> [Percentage or Grade]</p>-->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Skills Section -->
   <section id="skills" class="skills-section animated-bg" data-aos="fade-right" style="position:relative;">
     <div class="shape-animation">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      
-  
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+
     <div class="container">
       <h2>Skills</h2>
       <ul class="skills-list">
-        <li><span>HTML/CSS</span><div class="skill-bar" style="width: 90%"></div></li>
-        <li><span>JavaScript</span><div class="skill-bar" style="width: 75%"></div></li>
-        <li><span>Java</span><div class="skill-bar" style="width: 85%"></div></li>
-        <li><span>Python</span><div class="skill-bar" style="width: 80%"></div></li>
+        <li data-aos="fade-right">
+          <span>Python</span>
+          <div class="skill-bar animated-bar" data-percent="60%">60%</div>
+        </li>
+        <li data-aos="fade-right">
+          <span>Java</span>
+          <div class="skill-bar animated-bar" data-percent="80%">80%</div>
+        </li>
+        <li data-aos="fade-right">
+          <span>HTML/CSS</span>
+          <div class="skill-bar animated-bar" data-percent="75%">75%</div>
+        </li>
+        <li data-aos="fade-right">
+          <span>JavaScript</span>
+          <div class="skill-bar animated-bar" data-percent="55%">55%</div>
+        </li>
       </ul>
     </div>
   </section>
 
- 
-<!-- Certificates Preview Section -->
-<section id="certificates-preview" class="cert-preview-section animated-bg" style="position:relative;">
+
+  <!-- Certificates Preview Section -->
+  <section id="certificates-preview" class="cert-preview-section animated-bg" style="position:relative;">
     <div class="shape-animation">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      
-  
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+
 
     <div class="container">
-        <h2 class="section-title" data-aos="fade-up">
-  <span class="typing-text">Certificates</span>
-  <span class="badge">10+ Achievements</span>
-</h2>
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="typing-text">Certificates</span>
+        <span class="badge">10+ Achievements</span>
+      </h2>
 
-  
+
       <div class="cert-preview-content" data-aos="fade-up" data-aos-delay="200">
         <img src="assets/images/Certificate-Image.jpg" alt="Certificates Preview" class="cert-preview-img" />
-  
+
         <div class="cert-preview-text" data-aos="fade-left" data-aos-delay="400">
           <p>
-            I've completed several certified programs in Web Development, Python, Data Science, and more — from Coursera, freeCodeCamp, and Udemy.
+            I've completed several certified programs in Web Development, Python, Data Science, and more — from
+            Coursera, freeCodeCamp, and Udemy.
           </p>
           <a href="certificates.html" class="btn">View All Certificates</a>
         </div>
       </div>
     </div>
   </section>
-  
-  
-  
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section animated-bg" data-aos="fade-left" style="position:relative;">
-        <div class="shape-animation">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          
-      
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out for collaborations or just to say hi!</p>
-      <ul class="contact-list">
-        <li>Email: <a href="mailto:lavanyamittal210207@gmail.com">lavanyamittal210207@gmail.com</a></li>
-<li>LinkedIn: <a href="https://www.linkedin.com/in/lavanya-mittal-b5b46b311" target="_blank">www.linkedin.com/in/lavanya-mittal-b5b46b311</a></li>
-<li>Github: <a href="https://github.com/Lavanya2102-create" target="_blank">https://github.com/Lavanya2102-create</a></li>
-<li>YouTube: <a href="https://www.youtube.com/@LavanyaMittal2102" target="_blank">www.youtube.com/@LavanyaMittal2102</a></li>
-<li>Phone: <a href="tel:+919416237888">+91 9416237888</a></li>
-      </ul>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-modern">
+    <h2>📬 Get in Touch</h2>
+    <p>Open to opportunities, collaborations, or just a chat. Reach out!</p>
+
+    <div class="contact-card">
+      <a href="mailto:lavanyamittal210207@gmail.com" class="contact-link"><i class="fas fa-envelope"></i>Email</a>
+      <a href="https://www.linkedin.com/in/lavanya-mittal-b5b46b311" target="_blank" class="contact-link"><i
+          class="fab fa-linkedin"></i>LinkedIn</a>
+      <a href="https://github.com/Lavanya2102-create" target="_blank" class="contact-link"><i
+          class="fab fa-github"></i>GitHub</a>
+      <a href="https://www.youtube.com/@LavanyaMittal2102" target="_blank" class="contact-link"><i
+          class="fab fa-youtube"></i>YouTube</a>
+      <a href="tel:+919416237888" class="contact-link"><i class="fas fa-phone"></i>+91 94162 37888</a>
     </div>
   </section>
-  
-  
+
+
 
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -224,37 +340,38 @@
       reset: false
     });
   </script>
-<script>
-  AOS.init();
-</script>
+  <script>
+    AOS.init();
+  </script>
 
-<!-- Thank You Section -->
-<section id="thank-you" class="thank-you-section" data-aos="fade-up">
+  <!-- Thank You Section -->
+  <section id="thank-you" class="thank-you-section" data-aos="fade-up">
     <div class="container">
       <h2 class="section-title">Thank You for Visiting</h2>
-  
+
       <div class="thank-you-content">
         <img src="assets/images/Animation - 1749052000860.gif" alt="Thank You" class="thank-you-gif" />
-  
+
         <p>
-          Reaching this point has been a path of learning, growth, and passion.  
-          If you’ve made it this far, thank you for your time — I truly appreciate it.  
+          Reaching this point has been a path of learning, growth, and passion.
+          If you’ve made it this far, thank you for your time — I truly appreciate it.
           Let’s connect, collaborate, and create something meaningful together. 🚀
         </p>
       </div>
     </div>
   </section>
-  
 
-  
-<!-- 🌟 FOOTER GOES HERE -->
-<footer class="footer">
+
+
+  <!-- 🌟 FOOTER GOES HERE -->
+  <footer class="footer">
     <div class="container">
       <p>© 2025 Lavanya Mittal. All rights reserved.</p>
     </div>
   </footer>
 
-  
+
 
 </body>
+
 </html>

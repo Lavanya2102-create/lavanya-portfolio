@@ -52,20 +52,63 @@ window.addEventListener('click', (e) => {
 
 // Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth'
-        });
-      }
-    });
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
   });
+});
 
-     // Dark mode toggle
-  document.getElementById("themeToggle").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+// Dark mode toggle
+document.getElementById("themeToggle").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+
+// Optional: Add scroll animations or interactivity here
+
+// Example scroll animation using Intersection Observer
+const cards = document.querySelectorAll('.project-card');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
   });
+}, {
+  threshold: 0.2
+});
 
-  
+cards.forEach(card => {
+  observer.observe(card);
+});
+
+// Animate bars when in view
+function animateBars() {
+  const bars = document.querySelectorAll(".animated-bar");
+
+  bars.forEach((bar) => {
+    const rect = bar.getBoundingClientRect();
+    const inView = rect.top < window.innerHeight && rect.bottom >= 0;
+
+    if (inView && !bar.classList.contains("filled")) {
+      const percent = bar.getAttribute("data-percent");
+      bar.style.width = percent;
+      bar.classList.add("filled");
+    }
+
+    if (!inView && bar.classList.contains("filled")) {
+      bar.style.width = "0";
+      bar.classList.remove("filled");
+    }
+  });
+}
+
+window.addEventListener("scroll", animateBars);
+window.addEventListener("load", animateBars);
+
